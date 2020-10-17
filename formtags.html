@@ -14,11 +14,11 @@
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/YxksUfnuEbI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-	<!-- disable / required / readonly / autofocus -->
+	<!-- disable / required / readonly / autofocus /multiple / checked / selected -->
 <div>
 	<fieldset>
 	<legend>This is sample form &copy; &commat;</legend>
-	<form action="" method="POST">
+	<form action="" method="POST" enctype="multipart/form-data">
 <label for="firstname">First Name</label>
 <input type="text" name="firstname" id="firstname" class="">
 <br/><br/>
@@ -33,14 +33,14 @@
 <input type="password" name="password" id="password" class=""><br/><br/>
 
 <label for="gender">Gender</label>
-<input type="radio" name="gender" id="gender" class="" value="1">Male
+<input type="radio" name="gender" id="gender" class="" value="1" checked>Male
 <input type="radio" name="gender" id="gender" class="" value="0">Female
 <br/><br/>
 <label for="color">Choose Your Fav Color</label>
-<input type="checkbox" name="color" id="color" class="" value="red">Red
-<input type="checkbox" name="color" id="color" class="" value="black">Black
-<input type="checkbox" name="color" id="color" class="" value="blue">Blue
-<input type="checkbox" name="color" id="color" class="" value="green">Green
+<input type="checkbox" name="color" id="color" class="" value="red" checked>Red
+<input type="checkbox" name="color" id="color" class="" value="black" checked>Black
+<input type="checkbox" name="color" id="color" class="" value="blue" checked>Blue
+<input type="checkbox" name="color" id="color" class="" value="green" checked>Green
 <br/><br/>
 <label for="age">Age</label>
 <input type="number" name="age" id="age" class="">
@@ -60,12 +60,21 @@
 <label for="datetime">Date Time</label>
 <input type="datetime-local" name="datetime" id="datetime" class="">
 <br/><br/>
+<label for="nrcfront">NRC Front</label>
+<input type="file" name="nrcfront" id="nrcfront" class="">
+<br/><br/>
+ <label for="nrcback">NRC Back</label>
+<input type="file" name="nrcback" id="nrcback" class="">
+<br/><br/>
+<label for="attach">Attachment</label>
+<input type="file" name="attach" id="attach" class="multiple">
+<br/><br/>
 <label for="country">Citizen</label>
 <select name="country" id="country" class="">
  <option selected disabled>Choose Your Country</option>
  <option value="myanmar">Myanmar</option>
 <option value="thailand">Thailand</option>
-<option value="indonisa">Indonisa</option>
+<option value="indonisa" selected>Indonisa</option>
 <option value="laos">Laos</option>
 </select>
 <br/><br/>
